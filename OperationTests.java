@@ -29,9 +29,11 @@ public class OperationTests {
 
 	@Test
 	public void testStep(){
-		Integer result = new Integer(27);
+		Integer result = new Integer(8);
+		Step aaa = (new Step()).apply(2,3)
 
-		assertEquals(result, (new Step()).apply(3,3)); //true
+		assertEquals(result, (new Step()).apply(2,3)); //true
+		assertNotNull(aaa);
 	}
 
 	@Test
